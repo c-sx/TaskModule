@@ -14,21 +14,49 @@
         <item name="android:background">@color/colorDivider</item>
     </style>
 
-    <style name="ButtonCategory" parent="Widget.AppCompat.Button.Colored">
+    <style name="ButtonBlue" parent="Widget.AppCompat.Button.Colored">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">40dp</item>
         <item name="android:width">230dp</item>
         <item name="android:height">70dp</item>
-        <item name="android:background">@drawable/btn_category</item>
+        <item name="android:background">@drawable/btn_blue</item>
         <item name="android:textSize">20dp</item>
     </style>
 
-    <style name="ButtonModule" parent="Widget.AppCompat.Button.Borderless">
+    <style name="ButtonBlueRound" parent="Widget.AppCompat.Button.Colored">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@drawable/btn_module</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/btn_blue_round</item>
+        <item name="android:textSize">20dp</item>
     </style>
+
+    <style name="ButtonWhite" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/btn_white</item>
+    </style>
+
+    <style name="ButtonWhiteRound" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_white_round</item>
+    </style>
+
+    <style name="Spinner">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/btn_white</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:layout_marginHorizontal">10dp</item>
+    </style>
+
 
 </resources>

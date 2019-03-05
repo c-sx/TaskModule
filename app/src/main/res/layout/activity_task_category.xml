@@ -37,25 +37,25 @@
 
         <Button
             android:id="@+id/btn_category_1"
-            style="@style/ButtonCategory"
+            style="@style/ButtonBlue"
             android:layout_below="@+id/tv_task_category"
             android:text="找人取东西" />
 
         <Button
             android:id="@+id/btn_category_2"
-            style="@style/ButtonCategory"
+            style="@style/ButtonBlue"
             android:layout_below="@id/btn_category_1"
             android:text="找人送东西" />
 
         <Button
             android:id="@+id/btn_category_3"
-            style="@style/ButtonCategory"
+            style="@style/ButtonBlue"
             android:layout_below="@id/btn_category_2"
             android:text="找人借东西" />
 
         <Button
             android:id="@+id/btn_category_4"
-            style="@style/ButtonCategory"
+            style="@style/ButtonBlue"
             android:layout_below="@id/btn_category_3"
             android:text="其他服务" />
 

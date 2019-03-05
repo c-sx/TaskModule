@@ -12,4 +12,8 @@
     <string name="title_activity_task_category">TaskCategory</string>
     <string name="title_activity_task_module">TaskModule</string>
     <string name="title_activity_task_publish">发布任务</string>
+    <string name="title_activity_task_receive">TaskReceive</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_task_receive_details">任务详情</string>
 </resources>

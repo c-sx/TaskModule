@@ -100,7 +100,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button_task_receive_details"
+            android:id="@+id/btn_task_receive_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ll_task_receive_details_integral"

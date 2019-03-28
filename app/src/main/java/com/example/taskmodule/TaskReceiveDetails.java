@@ -1,10 +1,12 @@
 package com.example.taskmodule;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -14,6 +16,7 @@ public class TaskReceiveDetails extends AppCompatActivity {
     private TextView tv_time;
     private TextView tv_type;
     private TextView tv_integral;
+    private Button btn_receive;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +38,26 @@ public class TaskReceiveDetails extends AppCompatActivity {
             }
         });
 
+        /**
+         * findId
+         */
         tv_title = findViewById(R.id.tv_task_receive_details_title);
         tv_time = findViewById(R.id.tv_task_receive_details_time);
         tv_type = findViewById(R.id.tv_task_receive_details_type);
         tv_content = findViewById(R.id.tv_task_receive_details_content);
         tv_integral = findViewById(R.id.tv_task_receive_details_integral);
+        btn_receive = findViewById(R.id.btn_task_receive_details);
+
+        /**
+         * button listener
+         */
+        btn_receive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TaskReceiveDetails.this, ReceiveSuccess.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

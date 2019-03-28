@@ -17,6 +17,17 @@ public class TaskModule extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            /*            switch (item.getItemId()) {
+                case R.id.navigation_home:
+                    mTextMessage.setText(R.string.title_home);
+                    return true;
+                case R.id.navigation_dashboard:
+                    mTextMessage.setText(R.string.title_dashboard);
+                    return true;
+                case R.id.navigation_notifications:
+                    mTextMessage.setText(R.string.title_notifications);
+                    return true;
+            }*/
             return true;
         }
     };
@@ -31,6 +42,7 @@ public class TaskModule extends AppCompatActivity {
 
         button_publish = (Button) findViewById(R.id.btn_task_publish);
         button_receive = (Button) findViewById(R.id.btn_task_receive);
+
         button_publish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

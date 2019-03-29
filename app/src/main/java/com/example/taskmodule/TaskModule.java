@@ -12,6 +12,9 @@ import android.widget.Button;
 public class TaskModule extends AppCompatActivity {
     private Button button_publish;
     private Button button_receive;
+    private Button button_center;
+
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -42,6 +45,7 @@ public class TaskModule extends AppCompatActivity {
 
         button_publish = (Button) findViewById(R.id.btn_task_publish);
         button_receive = (Button) findViewById(R.id.btn_task_receive);
+        button_center = (Button) findViewById(R.id.btn_task_center);
 
         button_publish.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +58,13 @@ public class TaskModule extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(TaskModule.this, TaskReceive.class);
+                startActivity(intent);
+            }
+        });
+        button_center.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TaskModule.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

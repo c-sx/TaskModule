@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void run() {
                 super.run();
                 try {
-                    String result = post("http://www.xinxianquan.xyz:8080/zhaqsq/user/login", "&userName=" + userName + "&userPassword" + userPW);
+                    String result = post("http://www.xinxianquan.xyz:8080/zhaqsq/user/login", "\"userName\":\"" + userName + "\",\"userPassword\":\"" + userPW + "\"");
                     Log.e("TAG", result);
                     Message msg = Message.obtain();
                     msg.what = POST;

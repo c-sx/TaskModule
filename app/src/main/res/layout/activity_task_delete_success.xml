@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterSuccess">
+    tools:context=".TaskDeleteSuccess">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_reg_suc"
+        android:id="@+id/toolbar_task_delete_success"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_reg_suc">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_task_delete_success">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -32,17 +32,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="快来登录开启你的社区之旅吧"
-            android:textColor="@color/colorText"
+            android:text="任务删除成功"
             android:textSize="20dp" />
 
         <Button
-            android:id="@+id/btn_reg_suc"
+            android:id="@+id/btn_task_delete_success"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_white"
-            android:text="马上登录"
+            android:text="我知道了"
             android:textSize="15dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
